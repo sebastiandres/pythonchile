@@ -13,7 +13,7 @@ image_dict["Sin registro"] = "https://github.com/sebastiandres/st_pythonchile/bl
 
 def get_events_data():
     # Shared gsheet_id
-    gsheet_id = "1cAKdPUbW9ZEOrffgnwTHFltwUM86te7o3KkQq_r7Srk"
+    gsheet_id = "15iKaOhNSVoX6xb2zRDi-oPl0Bd9Dz2RuJFFfD5JDzw4"
     # Data for the talks (charlas)
     df = read_googlesheet(gsheet_id, "charlas", ["Fecha", "Orden", "Track"])
     df.columns = [ unidecode(s.strip()) for s in df.columns]
