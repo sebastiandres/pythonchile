@@ -5,6 +5,7 @@ from helpers import *
 def on_click():
     st.query_params.clear()
 
+
 def get_authors_data():
     # Shared gsheet_id
     gsheet_id = "1nctiWcQFaB5UlIs6z8d1O6ZgMHFDMAoo3twVxYnBUws"
@@ -66,6 +67,7 @@ def display_author(df_authors, df_events, author_search_name):
     # Show table!
     #st.write(df_author_links)
     #st.write(df_author_events)
+
 
 def display_404_author(author):
     """

@@ -42,9 +42,6 @@ def display_search(df):
         type_sel = c2.selectbox("Tipo", talk_options)
         c3.markdown(""); c3.markdown(""); 
         rec_required = c3.checkbox("Grabado", value=False)
-
-        # Configure how many cards
-        N_cards_per_col = 5
     else:
         text_search = st.text_input("Escribe que te gustaría aprender sobre Python",
                                     placeholder=st.session_state.ejemplo)
