@@ -72,7 +72,9 @@ def get_most_relevant_videos(user_query, df, openai_api_key):
                             query=user_query)
     # Get the indexes (as a string)
     full_answer = llm(query_prompt)
-    indexes_str = eval(full_answer.content)
+    # Clean the answer
+    answer = full_answer.content.replace("```", "").replace("python", "").strip()
+    indexes_str = eval(answer)
     # Convert to python
     indexes_list = list(indexes_str)
     return indexes_list

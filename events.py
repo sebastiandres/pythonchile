@@ -24,7 +24,7 @@ def display_search(df):
     st.title('Python Chile: Registros de eventos')
     # Intro text
     st.caption(f"Descubre y aprende entre los más de **{df.shape[0]}** charlas, keynotes y talleres que hemos realizado en Python Chile.")
-    search_types = ["Búsqueda exacta", "Búsqueda con OpenAI (experimental)"]
+    search_types = ["Búsqueda exacta", "Búsqueda flexible"]
     search_type_sel = st.radio("¿Cómo quieres buscar?", search_types, horizontal=True)
     if search_type_sel == search_types[0]:
         c1, c2, c3 = st.columns([5,1,1])

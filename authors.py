@@ -2,6 +2,9 @@ import streamlit as st
 
 from helpers import *
 
+def on_click():
+    st.query_params.clear()
+
 def get_authors_data():
     # Shared gsheet_id
     gsheet_id = "1nctiWcQFaB5UlIs6z8d1O6ZgMHFDMAoo3twVxYnBUws"
@@ -69,5 +72,4 @@ def display_404_author(author):
     """
     st.title("404")
     st.write(f"No se encontró el autor {author} entre los autores registrados.")
-    if st.button("Volver a la página principal"):
-        st.experimental_set_query_params()
+    st.button("Volver a la página principal", on_click=on_click)

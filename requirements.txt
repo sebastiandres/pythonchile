@@ -1,7 +1,9 @@
-streamlit
-pandas
-numpy
+pandas==2.1.1
+numpy==1.26.4
+streamlit>1.24.1
 unidecode
-langchain
 openai
 tabulate
+langchain-community 
+langchain-core
+langchain-openai

@@ -1,3 +1,4 @@
+# This are shared functions used in the app and the dashboard   
 import streamlit as st
 import pandas as pd
 import numpy as np
